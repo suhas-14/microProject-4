@@ -116,45 +116,112 @@ body {
 }
 
 .opt-container {
-    border: 2px solid green;
-    display: flex;
-    gap: 20px;
-    width: 50%;
-    border-radius: 13px;
-    height: 70%;
-    align-items: center;
+  border: 2px solid green;
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  border-radius: 13px;
+  height: 70%;
+  align-items: center;
 }
 
-.opt-container > .rock {
-    border: 2px solid red;
-    width: 50px;
-    height: 50px;
+.rock-container {
+  background-color: #0074b6;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 0px 21px 1px #00000033 inset;
+}
+
+.rock {
+  background-color: #ffffff;
+  box-shadow: -1px 1px 11px 0px #00000059;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rock > img {
-    width: 80%;
-    height: 80%;
+  /* border: 2px dashed red; */
+  width: 80px;
+  height: 58.51px;
+  top: 351px;
+  left: 492px;
+  gap: 0px;
+  opacity: 0px;
 }
 
-.opt-container > .paper {
-    border: 2px solid yellow;
-    width: 50px;
-    height: 50px;
+.paper-container {
+  background-color: #bd00ff;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  background-color: #ffffff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .paper > img {
-    width: 80%;
-    height: 80%;
+  /* border: 2px dashed red; */
+  width: 72px;
+  height: 72px;
+  top: 552px;
+  left: 614px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .opt-container > .scissors {
-    border: 2px solid blue;
-    width: 50px;
-    height: 50px;
+  border: 2px solid blue;
+  width: 50px;
+  height: 50px;
+}
+
+.scissor-container {
+  background-color: #ffa943;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scissors {
+  background-color: #ffffff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scissors > img {
-    width: 60%;
-    height: 80%;
-    align-content: center;
+  /* border: 2px dashed red; */
+  width: 37px;
+  height: 53.5px;
+  top: 352px;
+  left: 751.92px;
+  gap: 0px;
+  opacity: 0px;
+  angle: -5.27 deg;
 }
+
+
