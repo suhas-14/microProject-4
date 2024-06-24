@@ -118,11 +118,12 @@ body {
 .opt-container {
   border: 2px solid green;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  width: 50%;
+  width: 30%;
   border-radius: 13px;
   height: 70%;
-  align-items: center;
 }
 
 .rock-container {
@@ -157,7 +158,7 @@ body {
 }
 
 .paper-container {
-  background-color: #bd00ff;
+  background-color: #ffa943;
   height: 120px;
   width: 120px;
   border-radius: 60px;
@@ -176,7 +177,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .paper > img {
@@ -189,7 +189,7 @@ body {
 }
 
 .scissor-container {
-  background-color: #ffa943;
+  background-color: #bd00ff;
   height: 120px;
   width: 120px;
   border-radius: 60px;
@@ -220,4 +220,28 @@ body {
   rotate: 5.27deg;
 }
 
+.btn-rules {
+  float: right;
+  position: relative;
+  right: 30px;
+  top: 50px;
+  height: 35px;
+  width: 119px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.btn-rules > #btn-text {
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.61px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ffffff;
+}
