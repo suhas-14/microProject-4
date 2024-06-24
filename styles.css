@@ -1,0 +1,150 @@
+body {
+  background-color: #8cc461;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.top-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.top {
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  border-radius: 13px;
+}
+
+.top > ul {
+  list-style: none;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46.88px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+  gap: 30px;
+}
+
+.compScore {
+  width: 139px;
+  height: 128px;
+  top: 77px;
+  left: 713px;
+  gap: 0px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: #ffffff;
+  color: #656565;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 8.92px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.compScore > #count {
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.69px;
+  text-align: center;
+  color: #252525;
+}
+
+.yourScore {
+  width: 139px;
+  height: 128px;
+  top: 77px;
+  left: 881px;
+  gap: 0px;
+  border-radius: 9px;
+  opacity: 0px;
+  background-color: #ffffff;
+  color: #656565;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 8.92px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.yourScore > #count {
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.69px;
+  text-align: center;
+  color: #252525;
+}
+
+.options {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64vh;
+  margin-top: 10px;
+}
+
+.opt-container {
+    border: 2px solid green;
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    border-radius: 13px;
+    height: 70%;
+}
+
+.opt-container > .rock {
+    border: 2px solid red;
+    width: 50px;
+}
+
+.rock > img {
+    width: 100%;
+}
+
+.opt-container > .paper {
+    border: 2px solid yellow;
+}
+
+.paper > img {
+    width: 100%;
+}
+
+.opt-container > .scissors {
+    border: 2px solid blue;
+}
+
+.scissors > img {
+    width: 100%;
+}
