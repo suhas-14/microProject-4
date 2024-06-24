@@ -124,6 +124,7 @@ body {
   width: 30%;
   border-radius: 13px;
   height: 70%;
+  position: relative;
 }
 
 .rock-container {
@@ -135,6 +136,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: -1px 1px 11px 0px #00000059;
+  position: absolute;
+  left: 113px;
 }
 
 .rock {
@@ -166,6 +169,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: -1px 1px 11px 0px #00000059;
+  position: absolute;
+  bottom: 30px;
 }
 
 .paper {
@@ -197,6 +202,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: -1px 1px 11px 0px #00000059;
+  position: absolute;
+  right: 113px;
 }
 
 .scissors {
