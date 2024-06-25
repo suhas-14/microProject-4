@@ -295,6 +295,9 @@ body {
   right: 0px;
   z-index: 1;
   display: none;
+  /* I am looking to add transition here, so the pop menu rise up slowly. */
+  /* transition: all 0.9s ease-in;
+  transform: translateY(-1%); */
 }
 
 .rulesInfo {
@@ -380,3 +383,4 @@ body {
   background-color: yellow;
   margin-right: 10px; 
 }
+

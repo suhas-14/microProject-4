@@ -13,7 +13,7 @@ rulesButton.addEventListener('click', () => {
 // Add event listener to the close icon
 closeIcon.addEventListener('click', () => {
   // Hide the rules popup
-  rulesPopup.style.opacity = '0';
+  rulesPopup.style.display = 'none';
 });
 
 
