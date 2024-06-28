@@ -1,0 +1,187 @@
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .top-main {
+    /* border: 2px solid red; */
+    height: 150px;
+  }
+  .top > ul {
+    /* border: 2px solid red; */
+    list-style: none;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30.88px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .score {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .compScore {
+    width: 139px;
+    height: 100px;
+    top: 77px;
+    left: 713px;
+    gap: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    background-color: #ffffff;
+    color: #656565;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 5.92px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .compScore > #count,
+.yourScore > #count {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.69px;
+  text-align: center;
+  color: #252525;
+}
+
+.yourScore {
+    width: 139px;
+    height: 100px;
+    top: 77px;
+    left: 881px;
+    gap: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    background-color: #ffffff;
+    color: #656565;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 5.92px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .game-title {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    margin-top: 20px;
+  }
+
+  .gameIcon {
+    /* border: 2px solid red; */
+    display: grid;
+    place-content: center;
+    height: 50vh;
+    width: 50%;
+    position: relative;
+  }
+
+  .game{
+    position: absolute;
+  }
+
+  .rock-container{
+    top: 50px;
+    left: 199px;
+  }
+
+  .scissor-container{
+    top: 50px;
+    right: 198px;
+  }
+
+  .paper-container {
+    top: 12.5rem;
+    right: 19.7rem;
+  }
+
+  .lines{
+    height: 50vh;
+    width: 70vh;
+  }
+
+  .lines > img {
+    position: absolute;
+  }
+
+  .lines > #line3 {
+    top: 155px;
+    left: 143px;
+  }
+
+  .lines > #line2 {
+    top: 155px;
+    left: 228px;
+  }
+
+  .lines > #line1 {
+    top: 105px;
+    right: 317px;
+
+  }
+
+  .btn-rules {
+    float: right;
+    position: relative;
+    right: 35px;
+    top: 20px;
+    height: 35px;
+    width: 119px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rules-popup {
+    /* border: 2px dashed yellow; */
+    width: 330px;
+    height: 397px;
+    gap: 0px;
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    z-index: 1;
+    display: none;
+    /* I am looking to add transition here, so the pop menu rise up slowly. */
+    /* transition: all 0.9s ease-in;
+    transform: translateY(-1%); */
+  }
+
+
+}
+

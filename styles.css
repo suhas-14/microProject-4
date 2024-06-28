@@ -120,9 +120,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  /* border: 2px solid yellow; */
 }
 
-.triangle-cont {
+.gameIcon {
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -144,6 +145,12 @@ body {
   position: relative;
   top: 70px;
   right: 30px;
+}
+
+.game-icons {
+  /* border: 2px solid red; */
+  height: 50vh;
+  width: 70vh;
 }
 
 .rock-container {
@@ -288,6 +295,7 @@ body {
 }
 
 .rules-popup {
+  /* border: 2px dashed yellow; */
   width: 330px;
   height: 397px;
   gap: 0px;
