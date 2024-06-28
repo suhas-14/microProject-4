@@ -65,8 +65,8 @@ body {
   align-items: center;
 }
 
-.compScore > #count,
-.yourScore > #count {
+.compScore > #compCount ,
+.yourScore > #userCount{
   font-family: Roboto;
   font-size: 45px;
   font-weight: 700;
@@ -112,6 +112,16 @@ body {
   align-items: center;
   width: 40%;
   color: #ffffff;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 19.92px;
+  letter-spacing: 0.2em;
+  text-align: left;
+}
+
+.user,
+.pc {
   opacity: 0;
 }
 
@@ -133,17 +143,26 @@ body {
   position: relative;
 }
 
-#line3 {
+.lines {
   /* border: 2px solid red; */
   position: relative;
-  top: 70px;
+  height: 30vh;
+}
+
+#line1 {
+  top: 60px;
+  left: 180px;
+}
+
+#line3 {
+  position: relative;
+  top: 180px;
   left: 30px;
 }
 
 #line2 {
-  /* border: 2px solid red; */
   position: relative;
-  top: 70px;
+  top: 180px;
   right: 30px;
 }
 
@@ -257,9 +276,9 @@ body {
 
 .btn-rules {
   float: right;
-  position: relative;
+  position: fixed;
   right: 35px;
-  top: 90px;
+  bottom: 90px;
   height: 35px;
   width: 119px;
   gap: 0px;
@@ -393,18 +412,16 @@ body {
 }
 
 .win-model {
-  /* border: 2px solid brown; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1900px;
   position: relative;
   bottom: 350px;
-  display: none;
+  /* display: none; */
 }
 
 .winner {
-  /* border: 2px dashed greenyellow; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,30 +459,15 @@ body {
   color: #ffffff;
 }
 
-/* .winner > .play-again {
-  width: 174px;
-  height: 44px;
-  border: 0px;
-  border-radius: 9px;
-  opacity: 0px;
-  background: #ffffff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-align: center;
-} */
-
 .hurray-model {
   background-color: #8cc461;
   height: 130vh;
   position: relative;
   bottom: 874px;
-  display: none;
+  /* display: none; */
 }
 
 .hurray {
-  /* border: 2px dashed yellow; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -524,9 +526,7 @@ body {
   color: #ffffff;
 }
 
-
 .lost-model {
-  /* border: 2px solid brown; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -50,17 +50,17 @@
     align-items: center;
   }
 
-  .compScore > #count,
-.yourScore > #count {
-  font-family: Roboto;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.69px;
-  text-align: center;
-  color: #252525;
-}
+  .compScore > #compCount,
+  .yourScore > #userCount {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.69px;
+    text-align: center;
+    color: #252525;
+  }
 
-.yourScore {
+  .yourScore {
     width: 139px;
     height: 100px;
     top: 77px;
@@ -84,18 +84,30 @@
 
   .game-title {
     /* border: 2px solid red; */
+    position: relative;
+    top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
   }
 
+  .game-info > .user {
+    /* border: 2px solid yellow; */
+    margin-left: 25px;
+  }
+
+  .game-info > .pc {
+    /* border: 2px solid yellow; */
+    margin-right: 25px;
+  }
+
   .game-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid yellow; */
     margin-top: 20px;
+    /* border: 2px solid yellow; */
   }
 
   .gameIcon {
@@ -107,26 +119,32 @@
     position: relative;
   }
 
-  .game{
+  .game {
     position: absolute;
+    /* display: none; */
   }
 
-  .rock-container{
+  .computer {
+    /* background-color: aqua; */
+    display: none;
+  }
+
+  .rock-container {
     top: 50px;
     left: 199px;
   }
 
-  .scissor-container{
+  .scissor-container {
     top: 50px;
     right: 198px;
   }
 
   .paper-container {
-    top: 12.5rem;
+    top: 13.5rem;
     right: 19.7rem;
   }
 
-  .lines{
+  .lines {
     height: 50vh;
     width: 70vh;
   }
@@ -148,14 +166,13 @@
   .lines > #line1 {
     top: 105px;
     right: 317px;
-
   }
 
   .btn-rules {
     float: right;
-    position: relative;
+    position: fixed;
     right: 35px;
-    top: 20px;
+    bottom: 10px;
     height: 35px;
     width: 119px;
     gap: 0px;
@@ -165,6 +182,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transition: all 0.2s ease-in; */
+  }
+
+  .btn-next {
+    float: right;
+    position: fixed;
+    right: 165px;
+    bottom: 10px;
+    height: 35px;
+    width: 119px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-hurray {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24.61px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 
   .rules-popup {
@@ -177,11 +224,197 @@
     right: 0px;
     z-index: 1;
     display: none;
-    /* I am looking to add transition here, so the pop menu rise up slowly. */
-    /* transition: all 0.9s ease-in;
-    transform: translateY(-1%); */
   }
 
+  .win-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1533px;
+    position: relative;
+    bottom: 280px;
+    display: none;
+    /* border: 2px solid; */
+  }
 
+  .winner {
+    /* border: 2px solid red; */
+    width: 1530px;
+  }
+
+  .winner > p {
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 36px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .winner > h3 {
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 31px;
+    top: 501px;
+    left: 573px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29.3px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .hurray-model {
+    background: transparent;
+    /* background-color: #8cc461; */
+    position: relative;
+    bottom: 630px;
+    display: none;
+  }
+
+  .hurray {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1533px;
+    margin-top: 0px;
+  }
+
+  .lost-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1533px;
+    position: relative;
+    bottom: 300px;
+    display: none;
+    /* border: 2px solid; */
+  }
+
+  .loser {
+    /* border: 2px solid red; */
+    width: 1530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loser > p {
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 36px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .loser > h3 {
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 31px;
+    top: 501px;
+    left: 573px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29.3px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .play-again {
+    width: 134px;
+    height: 34px;
+    border: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    background: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .tie-up {
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1533px;
+    position: relative;
+    bottom: 230px;
+    display: none;
+  }
+
+  .tie {
+    /* border: 2px solid red; */
+    width: 1530px;
+    /* margin: 0 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tie > p {
+    /* border: 2px solid red; */
+    height: 45px;
+    width: 300px;
+    font-family: Roboto;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 45.7px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .tie > .replay {
+    width: 134px;
+    height: 34px;
+    border: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    background: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .userShow {
+    /* border: 2px solid red; */
+    top: 93px;
+    left: 100px;
+  }
+
+  .compShow {
+    border: 2px solid red;
+    top: 93px;
+    right: 100px;
+  }
 }
-

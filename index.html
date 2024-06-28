@@ -26,12 +26,12 @@
                 <div class="compScore">
                     <p>COMPUTER</p>
                     <span>SCORE</span>
-                    <p id="count">0</p>
+                    <p id="compCount">0</p>
                 </div>
                 <div class="yourScore">
                     <p>YOUR</p>
                     <span>SCORE</span>
-                    <p id="count">0</p>
+                    <p id="userCount">0</p>
                 </div>
             </div>
         </div>
@@ -39,8 +39,8 @@
 
     <div class="game-title">
         <div class="game-info">
-            <p>YOU PICKED</p>
-            <p>PC PICKED</p>
+            <p class="user">YOU PICKED</p>
+            <p class="pc">PC PICKED</p>
         </div>
     </div>
     <div class="game-container">
@@ -55,19 +55,37 @@
                     <img src="./images/rock.png" alt="rock-img">
                 </div>
             </div>
-
             <div class="paper-container game">
-                <div class="paper"><img src="./images/paper.png" alt="paper-img"></div>
+                <div class="paper item"><img src="./images/paper.png" alt="paper-img"></div>
             </div>
-
             <div class="scissor-container game">
                 <div class="scissors"><img src="./images/scissor.png" alt="scissor-img"></div>
+            </div>
+            
+            <div class="rock-container computer">
+                <div class="rock icon">
+                    <img src="./images/rock.png" alt="rock-img">
+                </div>
+            </div>
+            <div class="paper-container computer">
+                <div class="paper icon">
+                    <img src="./images/paper.png" alt="paper-img">
+                </div>
+            </div>
+            <div class="scissor-container computer">
+                <div class="scissors icon">
+                    <img src="./images/scissor.png" alt="scissor-img">
+                </div>
             </div>
         </div>
     </div>
 
     <div class="btn-rules">
         <button id="btn-text">RULES</button>
+    </div>
+
+    <div class="btn-next">
+        <button class="btn-hurray">NEXT</button>
     </div>
 
     <div class="rules-popup">
