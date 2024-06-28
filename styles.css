@@ -183,6 +183,7 @@ body {
   box-shadow: -1px 1px 11px 0px #00000059;
   position: absolute;
   left: 32%;
+  /* border: 2px solid red; */
 }
 
 .rock {
@@ -237,6 +238,7 @@ body {
   gap: 0px;
   opacity: 0px;
 }
+
 
 .scissor-container {
   background-color: #bd00ff;

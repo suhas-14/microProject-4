@@ -34,8 +34,8 @@ const userTitle = document.querySelector('.user')
 const pcTitle = document.querySelector('.pc')
 const nextButton = document.querySelector('.btn-next.btn-hurray')
 // Initialize scores
-let userScoreCount = localStorage.getItem("userScore") ? parseInt(localStorage.getItem("userScore")) : 0;
-let computerScoreCount = localStorage.getItem("computerScore") ? (localStorage.getItem("computerScore")) : 0;
+let userScoreCount = JSON.parse(localStorage.getItem("userScore"));
+let computerScoreCount = JSON.parse(localStorage.getItem("computerScore"));
 
 // Function to generate computer's choice
 function getComputerChoice() {

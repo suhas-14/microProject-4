@@ -112,7 +112,7 @@
 
   .gameIcon {
     /* border: 2px solid red; */
-    display: grid;
+    display: flex;
     place-content: center;
     height: 50vh;
     width: 50%;
@@ -141,6 +141,18 @@
   .paper-container {
     top: 13.5rem;
     right: 19.7rem;
+  }
+
+  .computer > .rock{
+    margin: 14.5px;
+  }
+
+  .computer > .paper {
+    margin: 14.5px;
+  }
+
+  .computer > .scissors{
+    margin: 14.5px;
   }
 
   .lines {
@@ -417,4 +429,5 @@
     top: 93px;
     right: 100px;
   }
+
 }
