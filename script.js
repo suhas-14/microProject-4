@@ -163,8 +163,3 @@ replayButton.addEventListener('click', () => {
   document.querySelector('.tie-up').style.display = window.location.reload();
 });
 
-
-
-
-
-
