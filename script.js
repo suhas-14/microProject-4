@@ -160,7 +160,7 @@ playAgainButton.forEach((button) => {
 
 replayButton.addEventListener('click', () => {
   // Hide tie model
-  document.querySelector('.tie-up').style.display = 'none';
+  document.querySelector('.tie-up').style.display = window.location.reload();
 });
 
 
