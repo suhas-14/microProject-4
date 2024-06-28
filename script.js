@@ -32,9 +32,10 @@ const playAgainButton = document.querySelectorAll('.play-again');
 const replayButton = document.querySelector('.replay');
 const userTitle = document.querySelector('.user')
 const pcTitle = document.querySelector('.pc')
+const nextButton = document.querySelector('.btn-next.btn-hurray')
 // Initialize scores
-let userScoreCount = 0;
-let computerScoreCount = 0;
+let userScoreCount = localStorage.getItem("userScore") ? parseInt(localStorage.getItem("userScore")) : 0;
+let computerScoreCount = localStorage.getItem("computerScore") ? (localStorage.getItem("computerScore")) : 0;
 
 // Function to generate computer's choice
 function getComputerChoice() {
@@ -92,9 +93,11 @@ rockButton.addEventListener('click', () => {
   scissorButton.style.display='none';
   rockButton.classList.add('userShow');
   const computerChoice = getComputerChoice();
-  const winner = determineWinner('rock', computerChoice);
-  updateGame(winner, 'rock', computerChoice);
-  showComputerChoice(computerChoice);
+  setTimeout(()=>{
+    const winner = determineWinner('rock', computerChoice);
+    updateGame(winner, 'rock', computerChoice);
+    showComputerChoice(computerChoice);
+  },1000)
 });
 
 paperButton.addEventListener('click', () => {
@@ -104,9 +107,11 @@ paperButton.addEventListener('click', () => {
   scissorButton.style.display='none';
   paperButton.classList.add('userShow');
   const computerChoice = getComputerChoice();
-  const winner = determineWinner('paper', computerChoice);
-  updateGame(winner, 'paper', computerChoice);
-  showComputerChoice(computerChoice);
+  setTimeout(()=>{
+    const winner = determineWinner('paper', computerChoice);
+    updateGame(winner, 'paper', computerChoice);
+    showComputerChoice(computerChoice);
+  },1000)
 });
 
 scissorButton.addEventListener('click', () => {
@@ -116,20 +121,24 @@ scissorButton.addEventListener('click', () => {
   paperButton.style.display='none';
   scissorButton.classList.add('userShow');
   const computerChoice = getComputerChoice();
-  const winner = determineWinner('scissor', computerChoice);
-  updateGame(winner, 'scissor', computerChoice);
-  showComputerChoice(computerChoice);
+  setTimeout(()=>{
+    const winner = determineWinner('scissor', computerChoice);
+    showComputerChoice(computerChoice);
+    updateGame(winner, 'scissor', computerChoice);
+  },1000)
 });
 
 // Function to update the game state
 function updateGame(winner, userChoice, computerChoice) {
   if (winner === 'user') {
     userScoreCount++;
+    localStorage.setItem = ("userScore",userScoreCount);
     userScore.textContent = userScoreCount;
     // Show win model
     document.querySelector('.win-model').style.display = 'block';
   } else if (winner === 'computer') {
     computerScoreCount++;
+    localStorage.setItem = ("computerScore",computerScoreCount);
     computerScore.textContent = computerScoreCount;
     // Show lost model
     document.querySelector('.lost-model').style.display = 'block';
@@ -151,8 +160,10 @@ playAgainButton.forEach((button) => {
 
 replayButton.addEventListener('click', () => {
   // Hide tie model
-  document.querySelector('.tie-up').style.display = window.location.reload();
+  document.querySelector('.tie-up').style.display = 'none';
 });
+
+
 
 
 
